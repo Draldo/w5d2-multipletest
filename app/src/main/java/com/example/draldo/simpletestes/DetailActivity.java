@@ -15,10 +15,10 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         String text = getIntent().getStringExtra(Intent.EXTRA_TEXT);
-        StringBuilder stringBuilder = new StringBuilder(text).reverse();
+        String reverse = ReverseHelper.reverseStr(text);
 
         mTextView = (TextView) findViewById(R.id.a_detail_text);
-        mTextView.setText(stringBuilder.toString());
+        mTextView.setText(reverse);
     }
 
 }
