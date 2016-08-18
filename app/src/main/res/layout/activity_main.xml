@@ -16,6 +16,7 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/a_main_btn"
         android:onClick="doMagic"
         android:text="Click me"
         android:layout_width="match_parent"
